@@ -29,6 +29,12 @@
             <artifactId>json</artifactId>
             <version>20190722</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.choco-solver/choco-solver -->
+        <dependency>
+            <groupId>org.choco-solver</groupId>
+            <artifactId>choco-solver</artifactId>
+            <version>4.10.2</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <dependency>
             <groupId>commons-io</groupId>

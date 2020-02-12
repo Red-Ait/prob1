@@ -11,7 +11,7 @@ public class ProbOne {
 
         // 0 => valeur
         // 1 => poid
-        int[][] objs= {{122,10},{201,5},{20,5},{201,5},{20,5},{201,5},{20,5}};
+        int[][] objs= {{122,10},{20,5},{201,5},{20,5},{201,5},{20,5},{20,5},{20,5},{20,5},{20,5}};
         System.out.println(valeurMax(objs,50));
         List<Integer> ints = new ArrayList<>();
         ints.add(1);
