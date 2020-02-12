@@ -5,7 +5,7 @@ public class PobTow {
     public static void main(String[] args) {
         Model model = new Model("my first problem");
 
-        int n = 6;
+        int n =6;
         IntVar[] vars = new IntVar[n];
         for (int j = 0; j < n ; j++) {
             vars[j] = model.intVar("X" + (j +1), 1, n); // x in [0,5]
@@ -21,8 +21,12 @@ public class PobTow {
 
         for (int i = 0; i < n ; i++) {
         for (int j = 0; j < n ; j++) {
-            System.out.println(vars[j].getValue());
+            if (i == vars[j].getValue()) {
+                System.out.print("X\t");
+            } else
+                System.out.print(".\t");
         }
+        System.out.println();
         }
     }
 }

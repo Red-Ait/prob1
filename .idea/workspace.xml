@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20d76a60-130f-4541-89a9-308ab4496474" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PobTow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProbOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProbOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PobTow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PobTow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PobTow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PobTow.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -85,7 +85,7 @@
       <workItem from="1581414705281" duration="9955000" />
       <workItem from="1581430143660" duration="10000" />
       <workItem from="1581496274072" duration="13246000" />
-      <workItem from="1581517144373" duration="2326000" />
+      <workItem from="1581517144373" duration="3846000" />
     </task>
     <servers />
   </component>
