@@ -11,9 +11,14 @@ public class ProbOne {
 
         // 0 => valeur
         // 1 => poid
-        int[][] objs= {{22,10},{20,5},{20,5}};
-        System.out.println(valeurMax(objs,10));
-
+        int[][] objs= {{122,10},{201,5},{20,5},{201,5},{20,5},{201,5},{20,5}};
+        System.out.println(valeurMax(objs,50));
+        List<Integer> ints = new ArrayList<>();
+        ints.add(1);
+        ints.add(2);
+        ints.add(3);
+        ints.add(4);
+        //System.out.println(combine(ints, 2));
     }
 
     public static int valeurMax(int[][]  objets, int M ) {
@@ -23,9 +28,11 @@ public class ProbOne {
         List<Integer> range = IntStream.rangeClosed(0, objets.length - 1)
                 .boxed().collect(Collectors.toList());
         List<List<Integer>> indexes = new ArrayList<>();
-        for(int i = 1 ; i <= objets.length ; i++)
-            indexes.addAll(combine(range,range, i));
-
+        for(int i = 1 ; i <= objets.length ; i++) {
+            System.out.println(combine(range, i));
+            indexes.addAll(combine(range, i));
+        }
+//        System.out.println(indexes);
         for(List<Integer> idxs : indexes) {
             int valeur = 0;
             int poid = 0;
@@ -40,7 +47,7 @@ public class ProbOne {
         return  valuerMax;
     }
 
-    public static List<List<Integer>> combine(List<Integer> list,List<Integer> lastList, int Longeur) {
+    public static List<List<Integer>> combine(List<Integer> list, int Longeur) {
         List<List<Integer>> resultat = new ArrayList<>();
 
         for (Integer s : list) {
@@ -49,11 +56,17 @@ public class ProbOne {
                 l.add(s);
                 resultat.add(l);
             } else {
-                for(List<Integer> last : combine(list, lastList, Longeur - 1)) {
+                for(List<Integer> last : combine(list.subList(1, list.size() ), Longeur - 1)) {
                     boolean flag = false;
                     List<Integer> l = new ArrayList<>();
                     l.addAll(last);
                     l.add(s);
+                    for(int i = 0 ; i < l.size(); i++)
+                    for(int j = i + 1 ; j < l.size(); j++) {
+                        if (l.get(i).equals(l.get(j))) {
+                            flag = true;
+                        }
+                    }
                     for(List<Integer> res : resultat) {
                         Collections.sort(res);
                         Collections.sort(l);
@@ -66,23 +79,6 @@ public class ProbOne {
                 }
            }
         }
-        boolean flag = false;
-        do {
-            flag = false;
-            int k = 0;
-            for( k = 0; k < resultat.size() && !flag ; k++) {
-                for(int i = 0 ; i< resultat.get(k).size() && !flag ; i++)
-                    for(int j = i + 1 ; j< resultat.get(k).size() && !flag ; j++) {
-                        if(resultat.get(k).get(i).equals(resultat.get(k).get(j))) {
-                            flag = true;
-                        }
-                    }
-            }
-            if(flag)
-            resultat.remove(k - 1);
-
-
-        } while (flag);
 
         return resultat;
     }
