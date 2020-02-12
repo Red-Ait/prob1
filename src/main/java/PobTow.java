@@ -21,7 +21,7 @@ public class PobTow {
 
         for (int i = 0; i < n ; i++) {
         for (int j = 0; j < n ; j++) {
-            if (i == vars[j].getValue()) {
+            if (i + 1 == vars[j].getValue()) {
                 System.out.print("X\t");
             } else
                 System.out.print(".\t");
