@@ -14,13 +14,13 @@ public class OptChocoSolver {
         // 0 > POID
         // 1 > VALEUR
 
-                        // {{122,10},{20,5},{201,5},{20,5},{201,5},{20,5},{20,5},{20,5},{20,5},{20,5}}
-        int[][] objet = new int[][] { {10,5,5,5,5,5,5,5,5,5},{122,20,201,20,201,20,20,20,20,20 }};
+        // {{122,10},{20,5},{201,5},{20,5},{201,5},{20,5},{20,5},{20,5},{20,5},{20,5}}
+        int[][] objet = new int[][] { {10,5,5,5},{122,20,20,20 }};
 
         int[] poids = objet[0];
         IntVar[] poidVars = new IntVar[poids.length];
 
-        int poidMax = 50;
+        int poidMax = 20;
 
         int valeurMax = 0;
 
@@ -29,10 +29,6 @@ public class OptChocoSolver {
         }
 
         model.sum(poidVars, "<=", poidMax).post();
-
-//        model.getSolver().solve();
-  //      System.out.println("p1 = "+ p1Var.getValue()+" and p2 = "+ p2Var.getValue()
-    //            +" and p3 = "+ p3Var.getValue()+" and p4 = "+ p4Var.getValue());
 
         ParetoOptimizer po = new ParetoOptimizer(Model.MAXIMIZE,poidVars);
         Solver solver = model.getSolver();
@@ -46,13 +42,11 @@ public class OptChocoSolver {
         for(Solution s:paretoFront){
             int valeur = 0;
             for(int i = 0 ; i < poidVars.length ; i++ ) {
-                System.out.print(poidVars[i].getName() + " = "+s.getIntVal(poidVars[i]) + " ");
                 if(s.getIntVal(poidVars[i]) != 0)
                 valeur += objet[1][i];
             }
             if (valeur > valeurMax)
                 valeurMax = valeur;
-            System.out.println(" valeur = " + valeur);
         }
         System.out.println(" valeur max = " + valeurMax);
 
