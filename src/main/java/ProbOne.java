@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -32,6 +31,7 @@ public class ProbOne {
             System.out.println(combine(range, i));
             indexes.addAll(combine(range, i));
         }
+
 //        System.out.println(indexes);
         for(List<Integer> idxs : indexes) {
             int valeur = 0;

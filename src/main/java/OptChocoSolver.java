@@ -9,18 +9,20 @@ import java.util.List;
 public class OptChocoSolver {
 
     public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
+
         Model model = new Model();
 
         // 0 > POID
         // 1 > VALEUR
 
         // {{122,10},{20,5},{201,5},{20,5},{201,5},{20,5},{20,5},{20,5},{20,5},{20,5}}
-        int[][] objet = new int[][] { {10,5,5,5},{122,20,20,20 }};
+        int[][] objet = new int[][] { {10,5,32,12,20,30},{122,20,20,122,20,20 }};
 
         int[] poids = objet[0];
         IntVar[] poidVars = new IntVar[poids.length];
 
-        int poidMax = 20;
+        int poidMax = 60;
 
         int valeurMax = 0;
 
@@ -35,7 +37,6 @@ public class OptChocoSolver {
         solver.plugMonitor(po);
 
         while(solver.solve());
-
         List<Solution> paretoFront = po.getParetoFront();
         int len = 0 ;
         for(Solution s:paretoFront){
@@ -55,5 +56,8 @@ public class OptChocoSolver {
         System.out.println("The probleme has "+ len +" solutions : ");
         System.out.println("valeur max = " + valeurMax);
 
+        long endTime   = System.currentTimeMillis();
+        long totalTime = endTime - startTime;
+        System.out.println(totalTime);
     }
 }

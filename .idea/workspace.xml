@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20d76a60-130f-4541-89a9-308ab4496474" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CombineChoco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/OptChocoSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OptChocoSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PobTow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PobTow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProbOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProbOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/OptChocoSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OptChocoSolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PobTow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PobTow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ProbOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProbOne.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +56,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.OptChocoSolver">
+    <configuration name="CombineChoco" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CombineChoco" />
+      <module name="Test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OptChocoSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OptChocoSolver" />
       <module name="Test" />
@@ -74,8 +87,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.OptChocoSolver" />
-        <item itemvalue="Application.ProbOne" />
         <item itemvalue="Application.PobTow" />
+        <item itemvalue="Application.CombineChoco" />
+        <item itemvalue="Application.ProbOne" />
       </list>
     </recent_temporary>
   </component>
@@ -95,7 +109,7 @@
       <workItem from="1581496274072" duration="13246000" />
       <workItem from="1581517144373" duration="3846000" />
       <workItem from="1581521467743" duration="1556000" />
-      <workItem from="1581581179388" duration="4850000" />
+      <workItem from="1581581179388" duration="12937000" />
     </task>
     <servers />
   </component>
