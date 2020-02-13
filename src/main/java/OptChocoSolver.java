@@ -37,18 +37,23 @@ public class OptChocoSolver {
         while(solver.solve());
 
         List<Solution> paretoFront = po.getParetoFront();
-        System.out.println("Poid max: " + poidMax);
-        System.out.println("The pareto front has "+paretoFront.size()+" solutions : ");
+        int len = 0 ;
         for(Solution s:paretoFront){
             int valeur = 0;
             for(int i = 0 ; i < poidVars.length ; i++ ) {
                 if(s.getIntVal(poidVars[i]) != 0)
                 valeur += objet[1][i];
             }
-            if (valeur > valeurMax)
+            if (valeur == valeurMax)
+                len ++;
+            if (valeur > valeurMax) {
                 valeurMax = valeur;
+                len = 1;
+            }
         }
-        System.out.println(" valeur max = " + valeurMax);
+        System.out.println("Poid max: " + poidMax);
+        System.out.println("The probleme has "+ len +" solutions : ");
+        System.out.println("valeur max = " + valeurMax);
 
     }
 }
