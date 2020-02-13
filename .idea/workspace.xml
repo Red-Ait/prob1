@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20d76a60-130f-4541-89a9-308ab4496474" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/PobTow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PobTow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OptChocoSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +48,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PobTow">
+  <component name="RunManager" selected="Application.OptChocoSolver">
+    <configuration name="OptChocoSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OptChocoSolver" />
+      <module name="Test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PobTow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PobTow" />
       <module name="Test" />
@@ -64,8 +72,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PobTow" />
+        <item itemvalue="Application.OptChocoSolver" />
         <item itemvalue="Application.ProbOne" />
+        <item itemvalue="Application.PobTow" />
       </list>
     </recent_temporary>
   </component>
@@ -84,7 +93,8 @@
       <workItem from="1581430143660" duration="10000" />
       <workItem from="1581496274072" duration="13246000" />
       <workItem from="1581517144373" duration="3846000" />
-      <workItem from="1581521467743" duration="783000" />
+      <workItem from="1581521467743" duration="1556000" />
+      <workItem from="1581581179388" duration="3325000" />
     </task>
     <servers />
   </component>
