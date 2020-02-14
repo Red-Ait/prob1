@@ -58,8 +58,7 @@ public class ProbOne {
             } else {
                 for(List<Integer> last : combine(list.subList(1, list.size() ), Longeur - 1)) {
                     boolean flag = false;
-                    List<Integer> l = new ArrayList<>();
-                    l.addAll(last);
+                    List<Integer> l = new ArrayList<>(last);
                     l.add(s);
                     for(int i = 0 ; i < l.size(); i++)
                     for(int j = i + 1 ; j < l.size(); j++) {

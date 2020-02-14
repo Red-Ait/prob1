@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20d76a60-130f-4541-89a9-308ab4496474" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CombineChoco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Palindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OptChocoSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OptChocoSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PobTow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PobTow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProbOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProbOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CombineChoco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CombineChoco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Test.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Obj.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Obj.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/OptChocoSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OptChocoSolver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/PobTow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PobTow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ProbOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProbOne.class" afterDir="false" />
@@ -30,8 +37,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XcYdI9ahW8HVolChsDe77qKunE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -55,14 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.OptChocoSolver">
-    <configuration name="CombineChoco" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CombineChoco" />
-      <module name="Test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ChalangeTest">
     <configuration name="OptChocoSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OptChocoSolver" />
       <module name="Test" />
@@ -70,26 +73,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PobTow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PobTow" />
+    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Palindrome" />
       <module name="Test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProbOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProbOne" />
+    <configuration name="ChalangeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ChalangeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChalangeTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ChalangeTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChallengeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ChallengeTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChalangeTest" />
+        <item itemvalue="JUnit.ChalangeTest.test1" />
+        <item itemvalue="JUnit.ChallengeTest" />
+        <item itemvalue="Application.Palindrome" />
         <item itemvalue="Application.OptChocoSolver" />
-        <item itemvalue="Application.PobTow" />
-        <item itemvalue="Application.CombineChoco" />
-        <item itemvalue="Application.ProbOne" />
       </list>
     </recent_temporary>
   </component>
@@ -109,7 +134,8 @@
       <workItem from="1581496274072" duration="13246000" />
       <workItem from="1581517144373" duration="3846000" />
       <workItem from="1581521467743" duration="1556000" />
-      <workItem from="1581581179388" duration="12937000" />
+      <workItem from="1581581179388" duration="16475000" />
+      <workItem from="1581667620685" duration="5744000" />
     </task>
     <servers />
   </component>
@@ -128,5 +154,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
